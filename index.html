@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гид-Лукбук: Связь времён</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+            color: #1a1a1a;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .image-placeholder {
+            background-color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            object-fit: cover;
+        }
+        .text-accent {
+            color: #c94b4b;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-black selection:text-white">
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Using Unsplash with a placeholder fallback -->
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop" 
+                 alt="" 
+                 class="w-full h-full object-cover opacity-20"
+                 onerror="this.outerHTML='<div class=\'image-placeholder w-full h-full opacity-30\'></div>'">
+        </div>
+        
+        <div class="z-10 max-w-4xl mx-auto reveal active">
+            <p class="uppercase tracking-widest text-sm mb-4 font-semibold">Исследовательский проект • 10 класс</p>
+            <h1 class="text-6xl md:text-8xl font-semibold leading-tight mb-6 uppercase tracking-tight">Связь<br><span class="italic text-accent">Времён</span></h1>
+            <p class="text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto">Иллюстрированный гид-лукбук о цикличности моды и о том, почему прошлое снова становится трендом.</p>
+            
+            <a href="#intro" class="inline-block border-b border-black pb-1 uppercase tracking-widest text-sm hover:text-accent hover:border-accent transition-colors">
+                Смотреть лукбук
+            </a>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro" class="py-24 px-6 md:px-12 max-w-6xl mx-auto reveal">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-semibold mb-6">Почему мы оглядываемся назад?</h2>
+                <p class="text-gray-600 mb-4 leading-relaxed">Мода — это не прямая линия, а спираль. Каждые 20-30 лет дизайнеры возвращаются к старым лекалам, чтобы адаптировать их под новый мир.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">Наш опрос показал, что <strong class="text-black font-semibold">75,9%</strong> из вас любят ретро-стиль, но <strong class="text-black font-semibold">35,2%</strong> не знают, как его носить. Этот гид — ваш ключ к гардеробу, который связывает поколения.</p>
+                <p class="font-serif italic text-xl text-gray-500">— Полухина Валерия</p>
+            </div>
+            <div class="relative h-96">
+                <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?q=80&w=1911&auto=format&fit=crop" 
+                     alt="" 
+                     class="w-full h-full object-cover rounded-sm shadow-xl"
+                     onerror="this.outerHTML='<div class=\'image-placeholder rounded-sm shadow-xl\'></div>'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Eras Section -->
+    <section class="py-24 bg-zinc-900 text-white px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-semibold mb-20 text-center reveal">Какие вещи актуальны сейчас?</h2>
+
+            <!-- 90s -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24 reveal">
+                <div class="order-2 md:order-1 h-96 md:h-[32rem]">
+                    <img src="https://images.unsplash.com/photo-1550614000-4b95d4ebfa84?q=80&w=1974&auto=format&fit=crop" 
+                         alt="" 
+                         class="w-full h-full object-cover rounded-sm"
+                         onerror="this.outerHTML='<div class=\'image-placeholder bg-zinc-800 text-gray-300 rounded-sm\'></div>'">
+                </div>
+                <div class="order-1 md:order-2">
+                    <span class="text-accent tracking-widest uppercase text-sm font-semibold">Выбор 18.5% опрошенных</span>
+                    <h3 class="text-5xl font-serif mt-2 mb-6">1990-е: Гранж и Минимализм</h3>
+                    <p class="text-gray-400 mb-6 font-light text-lg">Эпоха, подарившая нам комфорт. Что именно искать в винтажных магазинах?</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-zinc-800 p-4 rounded-sm border-l-4 border-accent">
+                            <h4 class="font-semibold text-lg">Кожаные оверсайз-косухи</h4>
+                            <p class="text-gray-400 text-sm">Носим как с грубыми ботинками, так и на контрасте поверх легких платьев.</p>
+                        </div>
+                        <div class="bg-zinc-800 p-4 rounded-sm border-l-4 border-accent">
+                            <h4 class="font-semibold text-lg">Джинсы-трубы и Baggy</h4>
+                            <p class="text-gray-400 text-sm">Широкий, свободный крой из 90-х полностью вытеснил узкие скинни.</p>
+                        </div>
+                        <div class="bg-zinc-800 p-4 rounded-sm border-l-4 border-accent">
+                            <h4 class="font-semibold text-lg">Платья-комбинации (Slip dress)</h4>
+                            <p class="text-gray-400 text-sm">Идеальная база. Надеваем на белую футболку или под объемный свитер.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Y2K -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center reveal">
+                <div>
+                    <span class="text-accent tracking-widest uppercase text-sm font-semibold">Выбор 63% опрошенных — Хит!</span>
+                    <h3 class="text-5xl font-serif mt-2 mb-6">2000-е (Y2K): Эра Гламура</h3>
+                    <p class="text-gray-400 mb-6 font-light text-lg">Самый популярный тренд у зумеров. Главные мастхэвы нулевых:</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-zinc-800 p-4 rounded-sm border-l-4 border-accent">
+                            <h4 class="font-semibold text-lg">Сумки-багеты</h4>
+                            <p class="text-gray-400 text-sm">Небольшая сумка на коротком ремешке подмышку — главный аксессуар десятилетия.</p>
+                        </div>
+                        <div class="bg-zinc-800 p-4 rounded-sm border-l-4 border-accent">
+                            <h4 class="font-semibold text-lg">Брюки-карго и «парашюты»</h4>
+                            <p class="text-gray-400 text-sm">Ультраширокие штаны с обилием накладных карманов и затяжками снизу.</p>
+                        </div>
+                        <div class="bg-zinc-800 p-4 rounded-sm border-l-4 border-accent">
+                            <h4 class="font-semibold text-lg">Велюровые костюмы и кроп-топы</h4>
+                            <p class="text-gray-400 text-sm">Зип-худи со стразами или забавными принтами, которые сегодня носят с современными вещами.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-96 md:h-[32rem]">
+                    <img src="https://images.unsplash.com/photo-1610419827552-19e9b3a0f7e4?q=80&w=1964&auto=format&fit=crop" 
+                         alt="" 
+                         class="w-full h-full object-cover rounded-sm"
+                         onerror="this.outerHTML='<div class=\'image-placeholder bg-zinc-800 text-gray-300 rounded-sm\'></div>'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section class="py-24 px-6 md:px-12 bg-[#f4f2ee]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-semibold mb-4">Золотые правила стилизации</h2>
+                <p class="text-gray-600 text-lg">Решаем проблему «Как не выглядеть старомодно»</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Rule 1 -->
+                <div class="bg-white p-10 rounded-sm shadow-sm hover:shadow-md transition-shadow reveal" style="transition-delay: 100ms;">
+                    <div class="text-4xl text-accent font-serif mb-4">01</div>
+                    <h4 class="text-2xl font-serif mb-4">Правило 70/30</h4>
+                    <p class="text-gray-600 font-light">Пусть 70% твоего образа будут базовыми и современными, а 30% — винтажными. Например: современный спортивный костюм + винтажная кожаная куртка из 80-х.</p>
+                </div>
+                
+                <!-- Rule 2 -->
+                <div class="bg-white p-10 rounded-sm shadow-sm hover:shadow-md transition-shadow reveal" style="transition-delay: 200ms;">
+                    <div class="text-4xl text-accent font-serif mb-4">02</div>
+                    <h4 class="text-2xl font-serif mb-4">Контраст фактур</h4>
+                    <p class="text-gray-600 font-light">Ретро-вещи часто имеют уникальную фактуру (вельвет, тяжелый деним, шелк). Сочетай их с современными технологичными тканями или гладким базовым трикотажем.</p>
+                </div>
+
+                <!-- Rule 3 -->
+                <div class="bg-white p-10 rounded-sm shadow-sm hover:shadow-md transition-shadow reveal" style="transition-delay: 300ms;">
+                    <div class="text-4xl text-accent font-serif mb-4">03</div>
+                    <h4 class="text-2xl font-serif mb-4">Акцент на аксессуары</h4>
+                    <p class="text-gray-600 font-light">Если боишься радикальных перемен, начни с деталей: очки в стиле «кошачий глаз» (50-е), массивные цепи (90-е) или банданы и «крабики» (00-е).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where to find Section -->
+    <section class="py-24 px-6 md:px-12 max-w-6xl mx-auto reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=2076&auto=format&fit=crop" 
+                     alt="" 
+                     class="w-full h-auto rounded-sm"
+                     onerror="this.outerHTML='<div class=\'image-placeholder rounded-sm min-h-[400px]\'></div>'">
+            </div>
+            <div>
+                <h2 class="text-4xl md:text-5xl font-semibold mb-6">Где искать винтаж в Петербурге?</h2>
+                <p class="text-gray-500 mb-8 italic">По результатам опроса, 22% не знают, где найти крутые вещи. Составили гид по локациям СПб.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start border-b border-gray-200 pb-6">
+                        <div class="text-accent mr-4 mt-1">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2">Семейный шкаф (Бесплатно)</h4>
+                            <p class="text-gray-600 font-light">Самый ценный ресурс. Мамин тренч или папина олимпийка из 90-х имеют уникальное качество. 76% из вас уже находят сокровища там!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start border-b border-gray-200 pb-6">
+                        <div class="text-accent mr-4 mt-1">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2">Легендарная «Уделка»</h4>
+                            <p class="text-gray-600 font-light">Блошиный рынок на Удельной — главная мекка Петербурга для искателей винтажного денима, значков и уникальных кожаных курток.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start border-b border-gray-200 pb-6">
+                        <div class="text-accent mr-4 mt-1">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2">Селективные секонды СПб</h4>
+                            <p class="text-gray-600 font-light">Магазины, где вещи уже отобраны стилистами. Загляни в <strong>«Желтую вешалку»</strong>, винтажные лавки в <strong>Севкабель Порту</strong> или сеть благотворительных магазинов <strong>«Спасибо!»</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start pb-6">
+                        <div class="text-accent mr-4 mt-1">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2">Апсайклинг (DIY)</h4>
+                            <p class="text-gray-600 font-light">Не нашел нужное? Возьми старые джинсы и сделай из них трендовые бермуды или добавь гранж-потертости.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-24 bg-black text-white text-center px-6 reveal">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-serif mb-16">Итоги исследования в цифрах</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-5xl md:text-7xl font-serif text-accent mb-2">75.9<span class="text-3xl">%</span></div>
+                    <p class="font-light text-sm md:text-base text-gray-300">Носят вещи родителей</p>
+                </div>
+                <div>
+                    <div class="text-5xl md:text-7xl font-serif text-accent mb-2">63<span class="text-3xl">%</span></div>
+                    <p class="font-light text-sm md:text-base text-gray-300">Обожают стиль 2000-х</p>
+                </div>
+                <div>
+                    <div class="text-5xl md:text-7xl font-serif text-accent mb-2">31.5<span class="text-3xl">%</span></div>
+                    <p class="font-light text-sm md:text-base text-gray-300">Выбирают ради уникальности</p>
+                </div>
+                <div>
+                    <div class="text-5xl md:text-7xl font-serif text-accent mb-2">20.4<span class="text-3xl">%</span></div>
+                    <p class="font-light text-sm md:text-base text-gray-300">Ценят экологичность</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#fcfcfc] text-center border-t border-gray-200 px-6">
+        <h2 class="text-3xl font-serif mb-4">Будь уникальным. Носи историю.</h2>
+        <p class="text-gray-500 text-sm">Проект подготовила: Полухина Валерия, 10 класс. <br>ГБОУ СОШ № 436 им. Е.Б. Ефета, 2026</p>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const reveals = document.querySelectorAll(".reveal");
+
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                const elementVisible = 100;
+
+                reveals.forEach((reveal) => {
+                    const elementTop = reveal.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveal.classList.add("active");
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", revealOnScroll);
+            // Trigger once on load
+            revealOnScroll();
+        });
+    </script>
+</body>
+</html>
